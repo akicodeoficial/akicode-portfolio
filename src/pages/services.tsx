@@ -5,10 +5,10 @@ import ServiceCard from '../components/card';
 export default function ServicesPage(): JSX.Element {
   return (
     <RootLayout>
-      <header className="bg-body-secondary">
+      <section className="bg-body-secondary">
         <Breadcrumb />
-      </header>
-      <main>
+      </section>
+      <section>
         <div className="container">
           <div className="row p-3">
             <h2>Serviços que estou Prestando</h2>
@@ -44,7 +44,7 @@ export default function ServicesPage(): JSX.Element {
             </div>
           </div>
         </div>
-      </main>
+      </section>
     </RootLayout>
   );
 }

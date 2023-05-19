@@ -6,10 +6,10 @@ import LogoNode from '../assets/nodejs.jpg';
 export default function TechsPage(): JSX.Element {
   return (
     <RootLayout>
-      <header className="bg-body-secondary">
+      <section className="bg-body-secondary">
         <Breadcrumb />
-      </header>
-      <main>
+      </section>
+      <section>
         <div className="container">
           <div className="row">
             <h2>Tecnológias Da Minha Stack</h2>
@@ -21,7 +21,7 @@ export default function TechsPage(): JSX.Element {
             />
           </div>
         </div>
-      </main>
+      </section>
     </RootLayout>
   );
 }

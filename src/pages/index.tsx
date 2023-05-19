@@ -4,10 +4,10 @@ import RootLayout from '../layouts/root';
 export default function IndexPage(): JSX.Element {
   return (
     <RootLayout>
-      <header className="bg-body-secondary">
+      <section className="bg-body-secondary">
         <Breadcrumb />
-      </header>
-      <main>
+      </section>
+      <section>
         <div className="container">
           <div className="row">
             <div className="card">
@@ -28,7 +28,7 @@ export default function IndexPage(): JSX.Element {
             </div>
           </div>
         </div>
-      </main>
+      </section>
     </RootLayout>
   );
 }
