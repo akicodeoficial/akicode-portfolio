@@ -1,6 +1,7 @@
 import { PropsWithChildren } from 'react'
 import AkiLogo from '../assets/aki.png'
 import { Link } from 'react-router-dom';
+import Footer from '../components/footer';
 
 export default function RootLayout({ children }: PropsWithChildren<object>): JSX.Element {
   return (
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: PropsWithChildren<object>): JSX
         </div>
       </nav>
       {children}
+      <Footer />
     </>
   );
 }
