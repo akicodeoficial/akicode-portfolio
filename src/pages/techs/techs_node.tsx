@@ -28,12 +28,13 @@ export default function TechsNodePage(): JSX.Element {
                       <tr key={index}>
                         <td>
                           <a href={tech.link} target="_blank" rel="noreferrer">
-                            {tech.link}
+                            [LINK]
                           </a>
                         </td>
                         <td>{tech.name}</td>
                         <td>{tech.use}</td>
                         <td>{tech.domain}</td>
+                        <td>{tech.description}</td>
                       </tr>
                     );
                   })
