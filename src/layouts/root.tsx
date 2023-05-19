@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react'
 import AkiLogo from '../assets/aki.png'
+import { Link } from 'react-router-dom';
 
 export default function RootLayout({ children }: PropsWithChildren<object>): JSX.Element {
   return (
@@ -24,44 +25,48 @@ export default function RootLayout({ children }: PropsWithChildren<object>): JSX
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to={"/"}
+                >
                   Início
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/projetos">
+                <Link className="nav-link" to={"/projetos"}>
                   Projetos
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/experiencia">
+                <Link className="nav-link" to={"/experiencia"}>
                   Experiência
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/servicos">
+                <Link className="nav-link" to={"/servicos"}>
                   Serviços
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/freelancer">
+                <Link className="nav-link" to={"/freelancer"}>
                   Freelancer
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/habilidades">
+                <Link className="nav-link" to={"/habilidades"}>
                   Habilidades
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/tecnologias">
+                <Link className="nav-link" to={"/tecnologias"}>
                   Tecnológias
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/redes-sociais">
+                <Link className="nav-link" to={"/redes-sociais"}>
                   Redes Sociais
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
