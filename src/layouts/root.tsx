@@ -67,7 +67,7 @@ export default function RootLayout({ children }: PropsWithChildren<object>): JSX
           </div>
         </div>
       </nav>
-      <main>{children}</main>
+      {children}
     </>
   );
 }
