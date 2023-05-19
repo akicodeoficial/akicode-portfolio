@@ -1,9 +1,12 @@
+import Breadcrumb from '../components/breadcrumb';
 import RootLayout from '../layouts/root';
 
 export default function IndexPage(): JSX.Element {
   return (
     <RootLayout>
-      <h1>Index Page</h1>
+      <header className="bg-body-secondary">
+        <Breadcrumb />
+      </header>
     </RootLayout>
   )
 }
