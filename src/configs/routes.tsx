@@ -8,6 +8,7 @@ import ServicesPage from '../pages/services'
 import SkillsPage from '../pages/skills'
 import SocialPage from '../pages/social'
 import TechsPage from '../pages/techs'
+import TechsNodePage from '../pages/techs/techs_node'
 
 export default function ConfigRoutes(): JSX.Element {
   return (
@@ -20,6 +21,7 @@ export default function ConfigRoutes(): JSX.Element {
       <Route path="/habilidades" element={<SkillsPage />} />
       <Route path="/redes-sociais" element={<SocialPage />} />
       <Route path="/tecnologias" element={<TechsPage />} />
+      <Route path="/tecnologias/node" element={<TechsNodePage />} />
     </Routes>
   );
 }
