@@ -1,5 +1,7 @@
 import Breadcrumb from '../components/breadcrumb';
+import CardImage from '../components/card-image';
 import RootLayout from "../layouts/root";
+import LogoNode from '../assets/nodejs.jpg';
 
 export default function TechsPage(): JSX.Element {
   return (
@@ -10,17 +12,13 @@ export default function TechsPage(): JSX.Element {
       <main>
         <div className="container">
           <div className="row">
-            <h2>Tecnológias do Node.js</h2>
-            <table className="table">
-              <thead>
-                <tr>
-                  <th scope="col">Link</th>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Uso</th>
-                  <th scope="col">Dominio</th>
-                </tr>
-              </thead>
-            </table>
+            <h2>Tecnológias Da Minha Stack</h2>
+            <CardImage
+              cardText=""
+              cardTitle="Tecnológias Node"
+              imageUrl={LogoNode}
+              buttonUrl="/tecnologias/node"
+            />
           </div>
         </div>
       </main>
