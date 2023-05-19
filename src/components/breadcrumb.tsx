@@ -1,5 +1,4 @@
 export default function Breadcrumb(): JSX.Element {
-
   return (
     <nav aria-label="breadcrumb">
       <ol className="breadcrumb">
