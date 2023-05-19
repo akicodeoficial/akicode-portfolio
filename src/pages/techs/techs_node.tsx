@@ -1,5 +1,6 @@
 import Breadcrumb from "../../components/breadcrumb";
 import RootLayout from "../../layouts/root";
+import { TechsNode, TechsNodeInterface } from '../../constants/techs-node.const';
 
 export default function TechsNodePage(): JSX.Element {
   return (
@@ -20,6 +21,24 @@ export default function TechsNodePage(): JSX.Element {
                   <th scope="col">Dominio</th>
                 </tr>
               </thead>
+              <tbody>
+                {
+                  TechsNode.map((tech: TechsNodeInterface, index: number): JSX.Element => {
+                    return (
+                      <tr key={index}>
+                        <td>
+                          <a href={tech.link} target="_blank" rel="noreferrer">
+                            {tech.link}
+                          </a>
+                        </td>
+                        <td>{tech.name}</td>
+                        <td>{tech.use}</td>
+                        <td>{tech.domain}</td>
+                      </tr>
+                    );
+                  })
+                }
+              </tbody>
             </table>
           </div>
         </div>

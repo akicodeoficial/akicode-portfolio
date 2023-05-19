@@ -1,15 +1,15 @@
 export interface TechsNodeInterface {
-  nome: string;
+  name: string;
   link: string;
-  uso: string;
-  dominio: string;
+  use: string;
+  domain: string;
 }
 
 export const TechsNode: TechsNodeInterface[] = [
   {
-    nome: "Express.js",
+    name: "Express.js",
     link: "https://expressjs.com/pt-br/",
-    uso: "Frequente Com Nestjs",
-    dominio: "Intermediário",
+    use: "Frequente Com Nestjs",
+    domain: "Intermediário",
   },
 ];
