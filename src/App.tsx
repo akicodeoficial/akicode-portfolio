@@ -1,10 +1,11 @@
-import IndexPage from './pages'
+import { BrowserRouter } from 'react-router-dom'
+import ConfigRoutes from './configs/routes'
 
 function App(): JSX.Element {
   return (
-    <>
-      <IndexPage />
-    </>
+    <BrowserRouter>
+      <ConfigRoutes />
+    </BrowserRouter>
   )
 }
 
