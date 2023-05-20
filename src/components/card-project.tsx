@@ -12,7 +12,7 @@ export default function CardProjet({
   return (
     <div className="col">
       <div className="card shadow-sm">
-        <img src={imageUrl} />
+        <img src={imageUrl} width={305} height={170} />
         <div className="card-body">
           <p className="card-text">{cardDescription}</p>
           <div className="d-flex justify-content-between align-items-center">

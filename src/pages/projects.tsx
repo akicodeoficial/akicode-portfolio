@@ -1,6 +1,7 @@
 import CardProjet from "../components/card-project";
 import RootLayout from "../layouts/root";
-import EraseDatabase from "../assets/erasa-database.png";
+import EraseDatabase from "../assets/projects/erasa-database.png";
+import SocialProfileLinks from "../assets/projects/social-profile-links.png";
 
 export default function ProjectsPage(): JSX.Element {
   return (
@@ -23,7 +24,12 @@ export default function ProjectsPage(): JSX.Element {
             <CardProjet
               date="17/05/2023"
               imageUrl={EraseDatabase}
-              cardDescription="Um site para um empresa ficticia de vendas de banco de dados"
+              cardDescription="Um site de uma empresa ficticia que atua com vendas de banco de dados"
+            />
+            <CardProjet
+              date="21/04/2023"
+              imageUrl={SocialProfileLinks}
+              cardDescription="site para exibir todos as minhas redes sociais e links de contato"
             />
           </div>
         </div>
