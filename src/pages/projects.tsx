@@ -1,7 +1,9 @@
 import CardProjet from "../components/card-project";
 import RootLayout from "../layouts/root";
+
 import EraseDatabase from "../assets/projects/erasa-database.png";
 import SocialProfileLinks from "../assets/projects/social-profile-links.png";
+import NodeTypeScriptCacheRedis from "../assets/projects/node-typescript-cache-redis.jpeg";
 
 export default function ProjectsPage(): JSX.Element {
   return (
@@ -30,6 +32,11 @@ export default function ProjectsPage(): JSX.Element {
               date="21/04/2023"
               imageUrl={SocialProfileLinks}
               cardDescription="site para exibir todos as minhas redes sociais e links de contato"
+            />
+            <CardProjet
+              date="30/04/2023"
+              imageUrl={NodeTypeScriptCacheRedis}
+              cardDescription="Um projeto de estudo de nodejs com typescript e cache com redis"
             />
           </div>
         </div>
