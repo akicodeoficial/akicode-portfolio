@@ -2,6 +2,7 @@ import ProjetoPortfolio from "../assets/projects/projeto-portfolio.png";
 import EraseDatabase from "../assets/projects/erasa-database.png";
 import SocialProfileLinks from "../assets/projects/social-profile-links.png";
 import NodeTypeScriptCacheRedis from "../assets/projects/node-typescript-cache-redis.jpeg";
+import ServidorNodeExpress from "../assets/projects/servidor-nodejs-express.jpg";
 
 export interface ProjectsInterface {
   date: string;
@@ -33,5 +34,10 @@ export const Projects: ProjectsInterface[] = [
     image: ProjetoPortfolio,
     description:
       "Um pequeno site de portfolio em html e css desenvolvido em sala de aula.",
+  },
+  {
+    date: "28/04/2023",
+    image: ServidorNodeExpress,
+    description: "Criando servidor http web básico no node.js usando o framework express.js",
   },
 ];
