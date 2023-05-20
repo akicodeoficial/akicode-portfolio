@@ -6,7 +6,7 @@ export default function TechsNodePage(): JSX.Element {
   return (
     <RootLayout>
       <header className="bg-body-secondary">
-        <Breadcrumb />
+        <Breadcrumb actualPage='Tecnologias Do Node.js' />
       </header>
       <main>
         <div className="container">

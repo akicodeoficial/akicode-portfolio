@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 interface CardImageProps {
   imageUrl: string;
   cardTitle: string;
@@ -17,9 +19,9 @@ export default function CardImage({
       <div className="card-body">
         <h5 className="card-title">{cardTitle}</h5>
         <p className="card-text">{cardText}</p>
-        <a href={buttonUrl} className="btn btn-primary">
+        <Link to={buttonUrl} className="btn btn-primary">
           Ir para a Página
-        </a>
+        </Link>
       </div>
     </div>
   );
