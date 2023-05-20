@@ -1,12 +1,18 @@
-export default function Breadcrumb(): JSX.Element {
+import { Link } from 'react-router-dom';
+
+interface BreadcrumbProps {
+  actualPage: string;
+}
+
+export default function Breadcrumb({ actualPage }: BreadcrumbProps): JSX.Element {
   return (
     <nav aria-label="breadcrumb">
       <ol className="breadcrumb">
         <li className="breadcrumb-item">
-          <a href="/">Home</a>
+          <Link to={'/'}>Início</Link>
         </li>
         <li className="breadcrumb-item active" aria-current="page">
-          Data
+          {actualPage}
         </li>
       </ol>
     </nav>

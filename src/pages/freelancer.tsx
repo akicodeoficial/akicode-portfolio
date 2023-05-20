@@ -5,7 +5,7 @@ export default function FreelancePage(): JSX.Element {
   return (
     <RootLayout>
       <section className="bg-body-secondary">
-        <Breadcrumb />
+        <Breadcrumb actualPage='Projetos Freelancer' />
       </section>
       <section className="bg-body-secondary">
         <div className="container">

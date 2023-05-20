@@ -6,7 +6,7 @@ export default function ServicesPage(): JSX.Element {
   return (
     <RootLayout>
       <section className="bg-body-secondary">
-        <Breadcrumb />
+        <Breadcrumb actualPage='Serviços' />
       </section>
       <section>
         <div className="container">
@@ -37,7 +37,7 @@ export default function ServicesPage(): JSX.Element {
             </div>
             <div className="col-sm-6">
               <ServiceCard
-                titleHeader='Desenvolvimento de API'
+                titleHeader="Desenvolvimento de API"
                 plainHolder="Desenvolvimento de API's"
                 plainText="Desenvolvimento de API's usando Nodejs, Python, Flask, Django, Nest.js e Adonis.js"
               />

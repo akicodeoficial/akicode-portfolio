@@ -4,10 +4,14 @@ import RootLayout from "../layouts/root";
 import EraseDatabase from "../assets/projects/erasa-database.png";
 import SocialProfileLinks from "../assets/projects/social-profile-links.png";
 import NodeTypeScriptCacheRedis from "../assets/projects/node-typescript-cache-redis.jpeg";
+import Breadcrumb from '../components/breadcrumb';
 
 export default function ProjectsPage(): JSX.Element {
   return (
     <RootLayout>
+      <header>
+        <Breadcrumb actualPage='Projetos Pessoais' />
+      </header>
       <div className="p-3">
         <section className="jumbotron text-center">
           <div className="container">

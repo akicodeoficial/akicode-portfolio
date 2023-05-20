@@ -7,7 +7,7 @@ export default function TechsPage(): JSX.Element {
   return (
     <RootLayout>
       <section className="bg-body-secondary">
-        <Breadcrumb />
+        <Breadcrumb actualPage='Tecnologias' />
       </section>
       <section>
         <div className="container">
