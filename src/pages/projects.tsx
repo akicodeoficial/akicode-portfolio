@@ -1,16 +1,17 @@
 import CardProjet from "../components/card-project";
 import RootLayout from "../layouts/root";
+import Breadcrumb from "../components/breadcrumb";
 
+import ProjetoPortfolio from "../assets/projects/projeto-portfolio.png";
 import EraseDatabase from "../assets/projects/erasa-database.png";
 import SocialProfileLinks from "../assets/projects/social-profile-links.png";
 import NodeTypeScriptCacheRedis from "../assets/projects/node-typescript-cache-redis.jpeg";
-import Breadcrumb from '../components/breadcrumb';
 
 export default function ProjectsPage(): JSX.Element {
   return (
     <RootLayout>
       <header>
-        <Breadcrumb actualPage='Projetos Pessoais' />
+        <Breadcrumb actualPage="Projetos Pessoais" />
       </header>
       <div className="p-3">
         <section className="jumbotron text-center">
@@ -41,6 +42,11 @@ export default function ProjectsPage(): JSX.Element {
               date="30/04/2023"
               imageUrl={NodeTypeScriptCacheRedis}
               cardDescription="Um projeto de estudo de nodejs com typescript e cache com redis"
+            />
+            <CardProjet
+              date="26/04/2023"
+              imageUrl={ProjetoPortfolio}
+              cardDescription="Um pequeno site de portfolio em html e css desenvolvido em sala de aula."
             />
           </div>
         </div>
