@@ -1,11 +1,7 @@
 import CardProjet from "../components/card-project";
 import RootLayout from "../layouts/root";
 import Breadcrumb from "../components/breadcrumb";
-
-import ProjetoPortfolio from "../assets/projects/projeto-portfolio.png";
-import EraseDatabase from "../assets/projects/erasa-database.png";
-import SocialProfileLinks from "../assets/projects/social-profile-links.png";
-import NodeTypeScriptCacheRedis from "../assets/projects/node-typescript-cache-redis.jpeg";
+import { Projects, ProjectsInterface } from '../constants/projects.const';
 
 export default function ProjectsPage(): JSX.Element {
   return (
@@ -28,26 +24,11 @@ export default function ProjectsPage(): JSX.Element {
       <div className="album py-5 bg-body-tertiary">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <CardProjet
-              date="17/05/2023"
-              imageUrl={EraseDatabase}
-              cardDescription="Um site de uma empresa ficticia que atua com vendas de banco de dados"
-            />
-            <CardProjet
-              date="21/04/2023"
-              imageUrl={SocialProfileLinks}
-              cardDescription="site para exibir todos as minhas redes sociais e links de contato"
-            />
-            <CardProjet
-              date="30/04/2023"
-              imageUrl={NodeTypeScriptCacheRedis}
-              cardDescription="Um projeto de estudo de nodejs com typescript e cache com redis"
-            />
-            <CardProjet
-              date="26/04/2023"
-              imageUrl={ProjetoPortfolio}
-              cardDescription="Um pequeno site de portfolio em html e css desenvolvido em sala de aula."
-            />
+            {
+              Projects.map((project: ProjectsInterface, index: number): JSX.Element => (
+                <CardProjet key={index} cardDescription={project.description} date={project.date} imageUrl={project.image} />
+              ))
+            }
           </div>
         </div>
       </div>
